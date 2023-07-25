@@ -11,6 +11,9 @@
 		2CC412182A7026E0007D6B8F /* LocalizationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC4120D2A7026E0007D6B8F /* LocalizationFramework.framework */; };
 		2CC4121D2A7026E0007D6B8F /* LocalizationFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4121C2A7026E0007D6B8F /* LocalizationFrameworkTests.swift */; };
 		2CC4121E2A7026E0007D6B8F /* LocalizationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC412102A7026E0007D6B8F /* LocalizationFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CC412292A702797007D6B8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4122B2A702797007D6B8F /* Localizable.strings */; };
+		2CC4122E2A7028A0007D6B8F /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4122D2A7028A0007D6B8F /* Localization.swift */; };
+		2CC412302A7028F7007D6B8F /* LocalizationFramework+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4122F2A7028F7007D6B8F /* LocalizationFramework+Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,10 @@
 		2CC412112A7026E0007D6B8F /* LocalizationFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LocalizationFramework.docc; sourceTree = "<group>"; };
 		2CC412172A7026E0007D6B8F /* LocalizationFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC4121C2A7026E0007D6B8F /* LocalizationFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationFrameworkTests.swift; sourceTree = "<group>"; };
+		2CC4122A2A702797007D6B8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CC4122C2A702799007D6B8F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CC4122D2A7028A0007D6B8F /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		2CC4122F2A7028F7007D6B8F /* LocalizationFramework+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizationFramework+Bundle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,9 @@
 			children = (
 				2CC412102A7026E0007D6B8F /* LocalizationFramework.h */,
 				2CC412112A7026E0007D6B8F /* LocalizationFramework.docc */,
+				2CC4122B2A702797007D6B8F /* Localizable.strings */,
+				2CC4122D2A7028A0007D6B8F /* Localization.swift */,
+				2CC4122F2A7028F7007D6B8F /* LocalizationFramework+Bundle.swift */,
 			);
 			path = LocalizationFramework;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 2CC412032A7026E0007D6B8F;
 			productRefGroup = 2CC4120E2A7026E0007D6B8F /* Products */;
@@ -177,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC412292A702797007D6B8F /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC4122E2A7028A0007D6B8F /* Localization.swift in Sources */,
+				2CC412302A7028F7007D6B8F /* LocalizationFramework+Bundle.swift in Sources */,
 				2CC412122A7026E0007D6B8F /* LocalizationFramework.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +229,18 @@
 			targetProxy = 2CC412192A7026E0007D6B8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CC4122B2A702797007D6B8F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CC4122A2A702797007D6B8F /* en */,
+				2CC4122C2A702799007D6B8F /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2CC4121F2A7026E0007D6B8F /* Debug */ = {
@@ -399,6 +425,7 @@
 		2CC412252A7026E0007D6B8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,6 +440,7 @@
 		2CC412262A7026E0007D6B8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
