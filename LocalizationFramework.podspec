@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
                    DESC
   spec.homepage     = "http://EXAMPLE/LocalizationFramework"
   spec.author       = { "YOUR_NAME" => "YOUR_EMAIL" }
-  spec.platform     = :macos, "10.15"
+  spec.platform     = :macos, "10.14"
   spec.source       = { :http => 'file:' + __dir__ + "/" }
   spec.source_files = "LocalizationFramework/**/*.{swift,lproj,strings}"
   spec.swift_version = "5.1"
