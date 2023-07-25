@@ -78,6 +78,7 @@
 		2CC4120F2A7026E0007D6B8F /* LocalizationFramework */ = {
 			isa = PBXGroup;
 			children = (
+				2CD7B0632A70405A0012AF9A /* fr,lproj */,
 				2CC412102A7026E0007D6B8F /* LocalizationFramework.h */,
 				2CC412112A7026E0007D6B8F /* LocalizationFramework.docc */,
 				2CC4122B2A702797007D6B8F /* Localizable.strings */,
@@ -93,6 +94,13 @@
 				2CC4121C2A7026E0007D6B8F /* LocalizationFrameworkTests.swift */,
 			);
 			path = LocalizationFrameworkTests;
+			sourceTree = "<group>";
+		};
+		2CD7B0632A70405A0012AF9A /* fr,lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "fr,lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
